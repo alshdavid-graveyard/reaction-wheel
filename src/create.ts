@@ -25,8 +25,8 @@ function observe(
       return s[p]
     },
     set: (s, p, u) => {
-      update$.emit()
       s[p] = u
+      update$.emit()
       return true
     }
   })

@@ -1,16 +1,11 @@
 {
   "name": "reaction-wheel",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "version": "1.0.11",
+  "types": "index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alshdavid/reaction-wheel.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -18,6 +13,10 @@
   },
   "homepage": "https://github.com/alshdavid/reaction-wheel#readme",
   "peerDependencies": {
+    "react": "^16.12.0"
+  },
+  "devDependencies": {
+    "typescript": "^3.7.5",
     "react": "^16.12.0"
   }
 }

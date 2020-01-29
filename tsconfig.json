@@ -1,6 +1,16 @@
 {
   "compilerOptions": {
     "lib": ["DOM", "ES2015"],
-    "outDir": "."
-  }
+    "outDir": "./",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "declarationDir": ".",
+    "declaration": true
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
