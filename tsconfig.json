@@ -4,6 +4,7 @@
     "outDir": "./",
     "module": "ESNext",
     "moduleResolution": "Node",
+    "esModuleInterop": true,
     "declarationDir": ".",
     "declaration": true
   },
