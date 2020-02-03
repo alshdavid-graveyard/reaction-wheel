@@ -1,0 +1,46 @@
+#!/bin/sh
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+echo "I'll put this in a CI/CD system some day"
+
+# ===
+echo "Cleaning"
+
+cd $DIR/packages/reaction-wheel
+make clean
+
+cd $DIR/packages/reaction-wheel-react
+make clean
+
+cd $DIR/packages/reaction-wheel-preact
+make clean
+
+# ===
+echo "Building"
+
+cd $DIR/packages/reaction-wheel
+make
+
+cd $DIR/packages/reaction-wheel-react
+make
+
+cd $DIR/packages/reaction-wheel-preact
+make
+
+# ===
+echo "Testing"
+
+cd $DIR/packages/reaction-wheel
+make test
+
+# ===
+echo "Publishing"
+
+cd $DIR/packages/reaction-wheel
+npm publish
+
+cd $DIR/packages/reaction-wheel-react
+npm publish
+
+cd $DIR/packages/reaction-wheel-preact
+npm publish

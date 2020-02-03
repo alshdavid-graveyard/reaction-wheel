@@ -1,0 +1,26 @@
+{
+  "name": "reaction-wheel-peact",
+  "version": "1.0.11",
+  "types": "index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alshdavid/reaction-wheel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alshdavid/reaction-wheel/issues"
+  },
+  "homepage": "https://github.com/alshdavid/reaction-wheel#readme",
+  "peerDependencies": {
+    "preact": "^10.2.1",
+    "reaction-wheel": "^1.0.12"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.1.1",
+    "jest": "^25.1.0",
+    "preact": "^10.2.1",
+    "ts-jest": "^25.1.0",
+    "typescript": "^3.7.5"
+  }
+}

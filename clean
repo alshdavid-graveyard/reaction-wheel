@@ -1,0 +1,11 @@
+#!/bin/sh
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+cd $DIR/packages/reaction-wheel
+make clean
+
+cd $DIR/packages/reaction-wheel-react
+make clean
+
+cd $DIR/packages/reaction-wheel-preact
+make clean
