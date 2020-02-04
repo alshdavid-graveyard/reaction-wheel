@@ -61,11 +61,21 @@ export const observeObject = (source: Array<any>, update$: emitter.Emitter<void>
 }
 
 export const observeArray = (source: Array<any>, update$: emitter.Emitter<void>) => {
-  const proxy = [ ...source ]
-  for (const method of methodsToPatch) {
-    patchMethod(proxy, method, () => update$.emit())
+  for (let i = 0; i < source.length; i++) {
+    if (checktype.isArray(source[i])) {
+      source[i] = observeArray(source[i], update$)
+    }
+    if (checktype.isObject(source[i])) {
+      source[i] = observeObject(source[i], update$)
+    }
   }
-  return proxy
+  for (const method of methodsToPatch) {
+    patchMethod(source, method, () => {
+      observeArray(source, update$)
+      update$.emit()
+    })
+  }
+  return source
 }
 
 export const patchMethod = (target: any, methodKey: string, patch: () => void) => {

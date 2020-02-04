@@ -8,7 +8,7 @@ const values = {
 }
 
 const options: rw.CreateOptions = {
-  mutationStrategy: rw.MustationStrategy.PROXY
+  mutationStrategy: rw.MutationStrategy.PROXY
 }
 
 it('Update on shallow change', done => {

@@ -8,11 +8,10 @@ const values = {
 }
 
 const options: rw.CreateOptions = {
-  mutationStrategy: rw.MustationStrategy.GETTER_SETTER
+  mutationStrategy: rw.MutationStrategy.GETTER_SETTER
 }
 
-// TODO (Sorry Internet Explorer)
-xit('Update on array item mutation', done => {
+it('Update on array item mutation', done => {
   const target = [{ a: values.one }]
   const target$ = rw.create(target, options)
 
@@ -24,7 +23,7 @@ xit('Update on array item mutation', done => {
   target$[0].a = values.two
 })
 
-xit('Emit on mutatation after item pushed to array', done => {
+it('Emit on mutatation after item pushed to array', done => {
   const target = [{ a: values.one }]
   const target$ = rw.create(target, options)
 

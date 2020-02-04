@@ -6,22 +6,22 @@ export type ProxySubscriber<T = any> = (
   T & emitter.Emitter<void>
 )
 
-export enum MustationStrategy {
+export enum MutationStrategy {
     AUTO = 'AUTO',
     PROXY = 'PROXY',
     GETTER_SETTER = 'GETTER_SETTER'
 }
 
 export type CreateOptions = {
-    mutationStrategy?: MustationStrategy,
+    mutationStrategy?: MutationStrategy,
 }
 
 export const create = <T>(source: T, {
-    mutationStrategy = MustationStrategy.AUTO,
+    mutationStrategy = MutationStrategy.AUTO,
 }: CreateOptions = {}) => {
-    if (mutationStrategy === MustationStrategy.GETTER_SETTER) {
+    if (mutationStrategy === MutationStrategy.GETTER_SETTER) {
         return getterssetters.create(source)
-    } else if (mutationStrategy === MustationStrategy.PROXY) {
+    } else if (mutationStrategy === MutationStrategy.PROXY) {
         return proxy.create(source)
     } else if (typeof Proxy === "undefined") {
         return getterssetters.create(source)
