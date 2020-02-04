@@ -1,0 +1,6 @@
+node_modules
+tests
+jest.config.js
+makefile
+.git
+.gitignore

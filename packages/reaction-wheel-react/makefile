@@ -19,6 +19,7 @@ clean:
 		! -name yarn.lock \
 		! -name tests \
 		! -name node_modules \
+		! -name .npmignore \
 		! -name .git \
 		! -name makefile \
 		! -name . \

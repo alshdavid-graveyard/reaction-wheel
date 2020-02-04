@@ -1,6 +1,6 @@
 {
   "name": "reaction-wheel",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "types": "index.d.ts",
   "repository": {
     "type": "git",

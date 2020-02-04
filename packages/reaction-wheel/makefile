@@ -18,6 +18,7 @@ clean:
 		! -name jest.config.js \
 		! -name yarn.lock \
 		! -name node_modules \
+		! -name .npmignore \
 		! -name .git \
 		! -name makefile \
 		! -name tests \

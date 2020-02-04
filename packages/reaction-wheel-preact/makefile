@@ -17,6 +17,7 @@ clean:
 		! -name tslint.json \
 		! -name jest.config.js \
 		! -name yarn.lock \
+		! -name .npmignore \
 		! -name node_modules \
 		! -name tests \
 		! -name .git \
