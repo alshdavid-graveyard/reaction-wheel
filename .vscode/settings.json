@@ -1,0 +1,18 @@
+{
+  "files.exclude": {
+    "**/.git": false,
+    "**/.svn": false,
+    "**/.hg": false,
+    "**/CVS": false,
+    "**/.DS_Store": false,
+    "**/jest.config.js": false,
+    "**/yarn.lock": false,
+    "**/makefile": false,
+    "**/.npmignore": false,
+    "**/.gitignore": false,
+    "**/*.js": false,
+    "**/*.d.js": false,
+    "**/node_modules": false,
+    "**/tsconfig.json": false
+  }
+}

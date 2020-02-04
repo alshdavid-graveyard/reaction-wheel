@@ -3,6 +3,7 @@
     "lib": ["DOM", "ES2015"],
     "outDir": "./",
     "module": "ESNext",
+    "target": "ESNext",
     "moduleResolution": "Node",
     "esModuleInterop": true,
     "declarationDir": ".",
