@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'preact/hooks'
+import { useState, useEffect } from 'react'
 import rw from 'reaction-wheel'
 
-export const useProxy = <T,>(source: rw.ProxySubscriber<T>): T => {
+export const useReactive = <T,>(source: rw.ProxySubscriber<T>): T => {
   const [ _, setValue ] = useState({})
   
   useEffect(() => {

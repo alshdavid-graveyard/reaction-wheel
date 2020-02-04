@@ -1,6 +1,6 @@
 {
   "name": "reaction-wheel-react",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "types": "index.d.ts",
   "repository": {
     "type": "git",
@@ -14,7 +14,7 @@
   "homepage": "https://github.com/alshdavid/reaction-wheel#readme",
   "peerDependencies": {
     "react": "^16.12.0",
-    "reaction-wheel": "^1.0.13"
+    "reaction-wheel": "^1.0.14"
   },
   "devDependencies": {
     "@types/jest": "^25.1.1",
